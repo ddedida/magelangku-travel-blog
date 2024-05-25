@@ -13,8 +13,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        cinaGeo: ["var(--font-cinaGeo)"],
+      },
+      colors: {
+        bw: {
+          primary: "#212121",
+          secondary: "#687083",
+          icon: "#9AA2B1",
+          inline: "#D1D5DC",
+          outline: "#E4E7EB",
+          light: "#F0F2F5",
+          surface: "#F9FAFB",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
 };
 export default config;
