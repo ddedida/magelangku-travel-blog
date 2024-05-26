@@ -40,7 +40,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cinaGeo.variable}`}>
-      <body className="flex flex-col items-center">{children}</body>
+      <head>
+        <link rel="icon" href="/icons/mgl.svg" />
+      </head>
+      <body className="flex w-full flex-col items-center bg-bw-surface">
+        {children}
+      </body>
     </html>
   );
 }
